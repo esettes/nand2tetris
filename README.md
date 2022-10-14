@@ -2,15 +2,28 @@
 
 ### Build the computer hardware
 
-My solution for the project nand2tetris. This first part of the project consist to build a basic simulated functional computer with the _Hardware simulator_ tool.
+My solution for the project [nand2tetris](https://www.nand2tetris.org/course). This first part of the project consist to build a basic simulated functional computer with the _Hardware simulator_ tool. 
+
+When this is done, the second part consists to build an operating system for this computer.
 
 
+## Contents
+- [Introduction](#Introduction)
+- [Chapters](#Chapters)
+    - [Chapter 1: Boolean Logic](#Chapter_1)
+    - [Chapter 2: Boolean Arithmetic](#Chapter_2)
 
-## Chapters
-- [Chapter 1: Boolean Logic](#Chapter_1)
-- [Chapter 2: Boolean Arithmetic](#Chapter_2)
+###### *I will be adding chapters as I progress in the course*
 
-*I will be adding topics as I progress in the course*
+<a name='Introduction'></a>
+ 
+## Introduction
+
+The course provides you with tools and resources to develop the entire project. Each of the modules of the project consists of exercises that must be completed. As the modules are completed, they are used to complete the next one, and so on.
+
+<br>
+
+<a name='Chapters'></a>
 
 <a name='Chapter_1'></a>
  
