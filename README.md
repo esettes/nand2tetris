@@ -18,7 +18,7 @@ When this is done, the second part consists to build an operating system for thi
  
 ## Introduction
 
-The course provides you with tools and resources to develop the entire project. Each of the modules of the project consists of exercises that must be completed. As the modules are completed, they are used to complete the next one, and so on.
+The course provides you with tools and resources to develop the entire project. Each of the modules of the project consists of exercises that must be completed. As the modules are completed, they are used to develop the next one, and so on.
 
 <br>
 
