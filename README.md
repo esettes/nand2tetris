@@ -37,22 +37,23 @@ The implementations have been made using basic [HDL](https://en.wikipedia.org/wi
 
 ###### *Checked logic gates means they are already implemented*
 
-#### Basic Logic Gates
+#### Elementary logic gates
 - [x] Not
 - [x] And
 - [x] Or
 - [x] Xor
-- [x] Multiplexer (Mux)
-- Demultiplexer (DMux)
+- [ ] Mux (Multiplexer)
+- [ ] DMux (Demultiplexer)
 
-#### Multi-Bit Versions of Basic Gates
-- [x] Multi-bit Not
-- [x] Multi-bit And
-- [x] Multi-bit Or
-- Multi-bit Xor
-- Multi-bit multiplexer
+#### 16-bit variants
+- [x] Not16
+- [x] And16
+- [x] Or16
+- [ ] Mux16
 
-#### Multi-Way Versions of Basic Gates
-- Multi-way Or
-- Multi-way/Multi-bit multiplexer
-- Multi-way/Multi-bit demultiplexer
+#### Multi-Way variants
+- [ ] Or8Way
+- [ ] Mux4Way16
+- [ ] Mux8Way16
+- [ ] DMux4Way
+- [ ] DMux8Way
