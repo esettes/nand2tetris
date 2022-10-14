@@ -11,7 +11,6 @@ When this is done, the second part consists to build an operating system for thi
 - [Introduction](#Introduction)
 - [Chapters](#Chapters)
     - [Chapter 1: Boolean Logic](#Chapter_1)
-    - [Chapter 2: Boolean Arithmetic](#Chapter_2)
 
 ###### *I will be adding chapters as I progress in the course*
 
