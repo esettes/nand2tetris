@@ -5,6 +5,7 @@
 
 load Or.hdl,
 output-file Or.out,
+compare-to Or.cmp,
 output-list a%B3.1.3 b%B3.1.3 out%B3.1.3;
 
 set a 0,
