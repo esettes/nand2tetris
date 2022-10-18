@@ -52,8 +52,8 @@ The implementations have been made using basic [HDL](https://en.wikipedia.org/wi
 - [x] Mux16
 
 #### Multi-Way variants
-- [ ] Or8Way
-- [ ] Mux4Way16
+- [x] Or8Way
+- [x] Mux4Way16
 - [ ] Mux8Way16
 - [ ] DMux4Way
 - [ ] DMux8Way
