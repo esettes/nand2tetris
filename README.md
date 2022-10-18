@@ -42,14 +42,14 @@ The implementations have been made using basic [HDL](https://en.wikipedia.org/wi
 - [x] And
 - [x] Or
 - [x] Xor
-- [ ] Mux (Multiplexer)
-- [ ] DMux (Demultiplexer)
+- [x] Mux (Multiplexer)
+- [x] DMux (Demultiplexer)
 
 #### 16-bit variants
 - [x] Not16
 - [x] And16
 - [x] Or16
-- [ ] Mux16
+- [x] Mux16
 
 #### Multi-Way variants
 - [ ] Or8Way
