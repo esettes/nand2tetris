@@ -38,7 +38,8 @@ And16, and so on, will also be build.
 The implementations have been made using basic [HDL](https://en.wikipedia.org/wiki/Hardware_description_language)(Hardware Description Language).
 
 <details>
-<summary> #### Elementary logic gates </summary>
+<summary> Elementary logic gates </summary>
+
 - [x] Not
 - [x] And
 - [x] Or
@@ -49,7 +50,8 @@ The implementations have been made using basic [HDL](https://en.wikipedia.org/wi
 </details>
 
 <details>
-<summary> #### 16-bit variants </summary>
+<summary> 16-bit variants </summary>
+
 - [x] Not16
 - [x] And16
 - [x] Or16
@@ -58,7 +60,8 @@ The implementations have been made using basic [HDL](https://en.wikipedia.org/wi
 </details>
 
 <details>
-<summary> #### Multi-Way variants </summary>
+<summary> Multi-Way variants </summary>
+
 - [x] Or8Way
 - [x] Mux4Way16
 - [x] Mux8Way16
@@ -74,10 +77,24 @@ The implementations have been made using basic [HDL](https://en.wikipedia.org/wi
 The purpose here is to continue implementing chips but a little higher level, and finally build an [ALU](https://en.wikipedia.org/wiki/Arithmetic_logic_unit)(Arithmetic Logical Unit).
 The chips implemented here avoids to make arithmetic and bitwise operations.
 
-ALU functions (f)
+<img align="right" height="220px" src="https://github.com/esettes/nand2tetris/blob/main/diagrams/utils/computer_system.png">
+
+#### ALU functions (f)
 - Arithmetic: x + y, x – y, x + 1, x – 1, ...
 - Logical: x & y, x | y, !x , ...
 
-Challenges
+
+#### Challenges
 - Use 0’s and 1’s for representing numbers
 - Use logic gates for realizing arithmetic functions.
+
+<details>
+<summary><h4> Chips: </h4></summary>
+
+- [x] HalfAdder
+- [ ] FullAdder
+- [ ] Add16 (16-bit adder)
+- [ ] Inc16 (16-bit incrementor)
+- [ ] ALU
+
+</details>
