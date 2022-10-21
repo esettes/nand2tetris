@@ -92,7 +92,7 @@ The chips implemented here avoids to make arithmetic and bitwise operations.
 <summary><h4> Chips: </h4></summary>
 
 - [x] HalfAdder
-- [ ] FullAdder
+- [x] FullAdder
 - [ ] Add16 (16-bit adder)
 - [ ] Inc16 (16-bit incrementor)
 - [ ] ALU
