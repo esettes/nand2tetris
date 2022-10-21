@@ -11,6 +11,7 @@ When this is done, the second part consists to build an operating system for thi
 - [Introduction](#Introduction)
 - [Chapters](#Chapters)
     - [Chapter 1: Boolean Logic](#Chapter_1)
+    - [Chapter 2: Boolean Arithmetic](#Chapter_2)
 
 ###### *I will be adding chapters as I progress in the course*
 
@@ -19,6 +20,8 @@ When this is done, the second part consists to build an operating system for thi
 ## Introduction
 
 The course provides you with tools and resources to develop the entire project. Each of the modules of the project consists of exercises that must be completed. As the modules are completed, they are used to develop the next one, and so on.
+
+I use [Logisim](http://www.cburch.com/logisim/index.html) tool too to make diagrams to facilitate and better understand my implementations.
 
 <br>
 
@@ -32,12 +35,10 @@ Starting with one primitive logic gate, [Nand](https://en.wikipedia.org/wiki/NAN
 The target computer will be designed to operate on 16-bit values, then 16-bit versions of the basic gates, like Not16,
 And16, and so on, will also be build.
 
-The implementations have been made using basic [HDL](https://en.wikipedia.org/wiki/Hardware_description_language)(Hardware Description Language). Besides, I make diagrams with the [Logisim](http://www.cburch.com/logisim/index.html) tool to facilitate and better understand my implementations.
+The implementations have been made using basic [HDL](https://en.wikipedia.org/wiki/Hardware_description_language)(Hardware Description Language).
 
-
-###### *Checked logic gates means they are already implemented*
-
-#### Elementary logic gates
+<details>
+<summary> #### Elementary logic gates </summary>
 - [x] Not
 - [x] And
 - [x] Or
@@ -45,15 +46,38 @@ The implementations have been made using basic [HDL](https://en.wikipedia.org/wi
 - [x] Mux (Multiplexer)
 - [x] DMux (Demultiplexer)
 
-#### 16-bit variants
+</details>
+
+<details>
+<summary> #### 16-bit variants </summary>
 - [x] Not16
 - [x] And16
 - [x] Or16
 - [x] Mux16
 
-#### Multi-Way variants
+</details>
+
+<details>
+<summary> #### Multi-Way variants </summary>
 - [x] Or8Way
 - [x] Mux4Way16
 - [x] Mux8Way16
 - [x] DMux4Way
 - [x] DMux8Way
+
+</details>
+
+<a name='Chapter_2'></a>
+ 
+## Chapter 2: Boolean Arithmetic
+
+The purpose here is to continue implementing chips but a little higher level, and finally build an [ALU](https://en.wikipedia.org/wiki/Arithmetic_logic_unit)(Arithmetic Logical Unit).
+The chips implemented here avoids to make arithmetic and bitwise operations.
+
+ALU functions (f)
+- Arithmetic: x + y, x – y, x + 1, x – 1, ...
+- Logical: x & y, x | y, !x , ...
+
+Challenges
+- Use 0’s and 1’s for representing numbers
+- Use logic gates for realizing arithmetic functions.
