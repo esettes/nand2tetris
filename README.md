@@ -98,3 +98,31 @@ The chips implemented here avoids to make arithmetic and bitwise operations.
 - [ ] ALU
 
 </details>
+
+### Two's complement
+
+<p align="left">
+
+<img align="left" height="300px" src="https://github.com/esettes/nand2tetris/blob/main/diagrams/utils/two_complement.png">
+
+</p>
+
+<p align="right">
+If we want to represent signed numbers(negatives), we can use half of the bit representations for it.
+</p>
+<p align="right">
+The two's complement of 'x' is defined to be 2<sup>n</sup> - x, where n = num of bits.
+</p>
+<p align="right">
+For example, the TC of -5 ---> 2<sup>4</sup> - 5 --> 16 - 5 = 11 is the TC.
+</p>
+<p align="right">
+Regular addition -> modulo 2<sup>n</sup>
+</p>
+<p align="right">
+Then if you want to compute 3 + (-5) ---> 3 + 11 = 14 % 16 = 14 = 2<sup>4</sup> - 14 = -2
+</p>
+<p align="right">
+To compute -2 + (-5) ---> 14 + 11 = 25 % 16 = 9 = 2<sup>4</sup> - 9 = -7
+</p>
+
