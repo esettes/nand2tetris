@@ -12,6 +12,7 @@ When this is done, the second part consists to build an operating system for thi
 - [Chapters](#Chapters)
     - [Chapter 1: Boolean Logic](#Chapter_1)
     - [Chapter 2: Boolean Arithmetic](#Chapter_2)
+    - [Chapter 3: Memory](#Chapter_3)
 
 ###### *I will be adding chapters as I progress in the course*
 
@@ -129,3 +130,11 @@ Then if you want to compute 3 + (-5) ---> 3 + 11 = 14 % 16 = 14 = 2<sup>4</sup> 
 To compute -2 + (-5) ---> 14 + 11 = 25 % 16 = 9 = 2<sup>4</sup> - 9 = -7
 </p>
 
+<br><br>
+
+
+<a name='Chapter_3'></a>
+ 
+## Chapter 3: Memory
+
+In the third module the target its to build the computer's main memory unit, also known as Random Access Memory (RAM). Going bottom-up frmo elementary flip-flop gates to one-bit registers to n-bit registers to a family of RAM chips. Unlike the chips implemented so far, which are based on combinational logic,  the computer's memory logic requires a clock-base secuential logic.
