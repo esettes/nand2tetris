@@ -53,8 +53,10 @@ CHIP ALU {
     Mux16(a=compxy, b=notcompxy, sel=no, out=setout);
 
     // zr
-    Xor16(a=setout, b=true, out=false, out[15]=zr);
+    Or16Way(in=setout, out=zrout);
+    Not(in=zrout, out=zr);
     // ng
-    And16(a=compxy, b=true, out=false, out[15]=ng);
-    Mux16(a=compxy, b=false, sel=false, out=out);
+    And16(a=setout, b=true, out=false, out[15]=ng);
+    Or16(a=setout, b=false, out=out);
+
 }
