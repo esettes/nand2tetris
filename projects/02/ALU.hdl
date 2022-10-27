@@ -57,5 +57,4 @@ CHIP ALU {
     // ng
     And16(a=compxy, b=true, out=false, out[15]=ng);
     Mux16(a=compxy, b=false, sel=false, out=out);
-    
 }
