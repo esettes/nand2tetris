@@ -1,8 +1,3 @@
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/02/ALU.hdl
-
 /**
  * The ALU (Arithmetic Logic Unit).
  * Computes one of the following functions:
@@ -42,5 +37,25 @@ CHIP ALU {
         ng; // 1 if (out < 0),  0 otherwise
 
     PARTS:
-   // Put you code here:
+    Mux16(a=x, b=false, sel=zx, out=zeroutx); //if zx=1, out=b (false)
+    Not16(in=zeroutx, out=notx);
+    Mux16(a=zeroutx, b=notx, sel=nx, out=setx);
+
+    Mux16(a=y, b=false, sel=zy, out=zerouty);
+    Not16(in=zerouty, out=noty);
+    Mux16(a=zerouty, b=noty, sel=ny, out=sety);
+
+    Add16(a=setx, b=sety, out=addxy);
+    And16(a=setx, b=sety, out=andxy);
+    Mux16(a=andxy, b=addxy, sel=f, out=compxy);
+
+    Not16(in=compxy, out=notcompxy);
+    Mux16(a=compxy, b=notcompxy, sel=no, out=setout);
+
+    // zr
+    Xor16(a=setout, b=true, out=false, out[15]=zr);
+    // ng
+    And16(a=compxy, b=true, out=false, out[15]=ng);
+    Mux16(a=compxy, b=false, sel=false, out=out);
+    
 }
