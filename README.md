@@ -78,28 +78,6 @@ The implementations have been made using basic [HDL](https://en.wikipedia.org/wi
 The purpose here is to continue implementing chips but a little higher level, and finally build an [ALU](https://en.wikipedia.org/wiki/Arithmetic_logic_unit)(Arithmetic Logical Unit).
 The chips implemented here avoids to make arithmetic and bitwise operations.
 
-<img align="right" height="220px" src="https://github.com/esettes/nand2tetris/blob/main/diagrams/utils/computer_system.png">
-
-#### ALU functions (f)
-- Arithmetic: x + y, x – y, x + 1, x – 1, ...
-- Logical: x & y, x | y, !x , ...
-
-
-#### Challenges
-- Use 0’s and 1’s for representing numbers
-- Use logic gates for realizing arithmetic functions.
-
-<details>
-<summary><h4> Chips: </h4></summary>
-
-- [x] HalfAdder
-- [x] FullAdder
-- [x] Add16 (16-bit adder)
-- [x] Inc16 (16-bit incrementor)
-- [x] ALU
-
-</details>
-
 ### Two's complement
 
 <p align="left">
@@ -115,7 +93,10 @@ If we want to represent signed numbers(negatives), we can use half of the bit re
 The two's complement of 'x' is defined to be 2<sup>n</sup> - x, where n = num of bits.
 </p>
 <p align="right">
-For example, the TC of -5 ---> 2<sup>4</sup> - 5 --> 16 - 5 = 11 is the TC.
+For example, the TC of -5
+</p>
+<p align="right">
+2<sup>4</sup> - 5 --> 16 - 5 = 11
 </p>
 <p align="right">
 Regular addition -> modulo 2<sup>n</sup>
@@ -124,14 +105,72 @@ Regular addition -> modulo 2<sup>n</sup>
 With this info, we can make subtraction too.
 </p>
 <p align="right">
-Then if you want to compute 3 + (-5) ---> 3 + 11 = 14 % 16 = 14 = 2<sup>4</sup> - 14 = -2
+Then if you want to compute -2 + (-5) 
 </p>
 <p align="right">
-To compute -2 + (-5) ---> 14 + 11 = 25 % 16 = 9 = 2<sup>4</sup> - 9 = -7
+14 + 11 = 25
+</p>
+<p align="right">
+25 % 16 = 9 ---> 2<sup>4</sup> - 9 = -7
 </p>
 
 <br><br>
 
+### ALU
+
+<img align="right" height="310px" src="https://github.com/esettes/nand2tetris/blob/main/diagrams/screenshots/alu_impl.png">
+
+<img align="right" height="140px" src="https://github.com/esettes/nand2tetris/blob/main/diagrams/screenshots/alu_diagram.png">
+
+#### Challenges
+- Use 0’s and 1’s for representing numbers
+- Use logic gates for realizing arithmetic functions.
+
+#### Functions (f)
+
+- Arithmetic:
+    - (x + y), (x - y), (y - x)
+    - (x + 1), (y + 1)
+    - (x - 1), (y - 1)
+- Logical:
+    - (x & y), (x | y)
+    - (!x), (!y)
+
+The inputs zx, nx, zy, etc... indicate whether these operations are performed or not on the inputs x and y. On each step the 
+value of x/y is or not modified.
+
+If you want to compute (out = y - x), where x = 4 and y = 6, the control bits(zx, nx, ...) are in the table.
+
+x = 0100
+
+y = 0110
+
+In pre-setting, the only operation to do is (!y), so:
+
+x = 0100
+
+y = 1001
+
+Next step, select between (+) and (&) is true, then out = x + y:
+
+0100 + 1001 = 1101
+
+And finally the output post-setting is true, then out = !out:
+
+!(1101) = 0010 = 2
+
+<details>
+<summary><h4> Chips to implement, including ALU: </h4></summary>
+
+- [x] HalfAdder
+- [x] FullAdder
+- [x] Add16 (16-bit adder)
+- [x] Inc16 (16-bit incrementor)
+- [x] ALU
+
+</details>
+
+<br>
 
 <a name='Chapter_3'></a>
  
