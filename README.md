@@ -96,16 +96,13 @@ The two's complement of 'x' is defined to be 2<sup>n</sup> - x, where n = num of
 For example, the TC of -5
 </p>
 <p align="right">
-2<sup>4</sup> - 5 --> 16 - 5 = 11
+2<sup>4</sup> - 5 ---> 16 - 5 = 11
 </p>
 <p align="right">
 Regular addition -> modulo 2<sup>n</sup>
 </p>
 <p align="right">
-With this info, we can make subtraction too.
-</p>
-<p align="right">
-Then if you want to compute -2 + (-5) 
+With this info, we can make subtraction too. Then if you want to compute -2 + (-5) 
 </p>
 <p align="right">
 14 + 11 = 25
