@@ -1,7 +1,7 @@
 # nand2tetris
 
 
-###### _All files of this project are part of www.nand2tetris.org and the book "The Elements of Computing Systems by Nisan and Schocken, MIT Press._
+###### _All files of this project are part of www.nand2tetris.org and the book "The Elements of Computing Systems" by Nisan and Schocken, MIT Press._
 
 ### Implement computer's hardware
 
