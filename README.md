@@ -3,7 +3,7 @@
 ### Build the computer hardware
 
 My solution for the project [nand2tetris](https://www.nand2tetris.org/course). This first part of the project consist to build a basic simulated functional computer with the _Hardware simulator_ tool. 
-
+###### _All files of this project are part of www.nand2tetris.org and the book "The Elements of Computing Systems by Nisan and Schocken, MIT Press_
 When this is done, the second part consists to build an operating system for this computer.
 
 
