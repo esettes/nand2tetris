@@ -1,11 +1,13 @@
 # nand2tetris
 
-### Build the computer hardware
+
+###### _All files of this project are part of www.nand2tetris.org and the book "The Elements of Computing Systems by Nisan and Schocken, MIT Press._
+
+### Implement computer's hardware
 
 My solution for the project [nand2tetris](https://www.nand2tetris.org/course). This first part of the project consist to build a basic simulated functional computer with the _Hardware simulator_ tool. 
-###### _All files of this project are part of www.nand2tetris.org and the book "The Elements of Computing Systems by Nisan and Schocken, MIT Press_
-When this is done, the second part consists to build an operating system for this computer.
 
+When this is done, the second part consists to build an operating system for this computer.
 
 ## Contents
 - [Introduction](#Introduction)
@@ -70,6 +72,8 @@ The implementations have been made using basic [HDL](https://en.wikipedia.org/wi
 - [x] DMux8Way
 
 </details>
+
+<br>
 
 <a name='Chapter_2'></a>
  
@@ -173,4 +177,6 @@ And finally the output post-setting is true, then out = !out:
  
 ## Chapter 3: Memory
 
-In the third module the target its to build the computer's main memory unit, also known as Random Access Memory (RAM). Going bottom-up frmo elementary flip-flop gates to one-bit registers to n-bit registers to a family of RAM chips. Unlike the chips implemented so far, which are based on combinational logic,  the computer's memory logic requires a clock-base secuential logic.
+In the third module the target its to build the computer's main memory unit, also known as Random Access Memory ([RAM](https://en.wikipedia.org/wiki/Random-access_memory)). Going bottom-up frmo elementary flip-flop gates to one-bit registers to n-bit registers to a family of RAM chips. 
+
+Unlike the chips implemented so far, which are based on combinational logic,  the computer's memory logic requires a clock-base secuential logic.
