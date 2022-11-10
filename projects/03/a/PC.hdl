@@ -16,5 +16,17 @@ CHIP PC {
     OUT out[16];
 
     PARTS:
-    // Put your code here:
+    // increment register output
+    Inc16(in=regout, out=incout);
+
+    // register out = out + 1 if inc = 1
+    Mux16(a=regout, b=incout, sel=inc, out=muxinc);
+
+    // sets out to in if load = 1
+    Mux16(a=muxinc, b=in, sel=load, out=outin);
+
+    // sets out to 0 if reset = 1
+    Mux16(a=outin, b=false, sel=reset, out=outzero);
+    
+    Register(in=outzero, load=true, out=out, out=regout);
 }
