@@ -1,6 +1,5 @@
 # nand2tetris
 
-
 ###### _All files of this project are part of www.nand2tetris.org and the book "The Elements of Computing Systems" by Nisan and Schocken, MIT Press._
 
 ### Implement computer's hardware
@@ -94,25 +93,25 @@ The chips implemented here avoids to make arithmetic and bitwise operations.
 If we want to represent signed numbers(negatives), we can use half of the bit representations for it.
 </p>
 <p align="right">
-The two's complement of 'x' is defined to be 2<sup>n</sup> - x, where n = num of bits.
+The two's complement of $\ x$ is defined to be $\ 2^n - x $, where $\ n$ = num of bits.
 </p>
 <p align="right">
 For example, the TC of -5
 </p>
 <p align="right">
-2<sup>4</sup> - 5 ---> 16 - 5 = 11
+$\ 2^4 - 5$ ---> $\ 16 - 5 = 11 $
 </p>
 <p align="right">
-Regular addition -> modulo 2<sup>n</sup>
+Regular addition $\ \mod 2^n $
 </p>
 <p align="right">
-With this info, we can make subtraction too. Then if you want to compute -2 + (-5) 
+With this info, we can make subtraction too. Then if you want to compute $\ -2 + (-5) $
 </p>
 <p align="right">
-14 + 11 = 25
+$\ 14 + 11 = 25$
 </p>
 <p align="right">
-25 % 16 = 9 ---> 2<sup>4</sup> - 9 = -7
+$\ 25 \mod 16 = 9$ ---> $\ 2^4 - 9 = -7 $
 </p>
 
 <br><br>
@@ -180,3 +179,7 @@ And finally the output post-setting is true, then out = !out:
 In the third module the target its to build the computer's main memory unit, also known as Random Access Memory ([RAM](https://en.wikipedia.org/wiki/Random-access_memory)). Going bottom-up frmo elementary flip-flop gates to one-bit registers to n-bit registers to a family of RAM chips. 
 
 Unlike the chips implemented so far, which are based on combinational logic,  the computer's memory logic requires a clock-base secuential logic.
+
+### D-Flip-Flop and 1-bit Register
+
+[DFF](https://www.javatpoint.com/d-flip-flop-in-digital-electronics) is the most elementary sequential gate; outputs the input in the previous time-step $\ (out[t] = in[t - 1])$
