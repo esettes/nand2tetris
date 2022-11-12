@@ -14,6 +14,7 @@ When this is done, the second part consists to build an operating system for thi
     - [Chapter 1: Boolean Logic](#Chapter_1)
     - [Chapter 2: Boolean Arithmetic](#Chapter_2)
     - [Chapter 3: Memory](#Chapter_3)
+    - [Chapter 4: Machine Language](#Chapter_4)
 
 ###### *I will be adding chapters as I progress in the course*
 
@@ -183,3 +184,18 @@ Unlike the chips implemented so far, which are based on combinational logic,  th
 ### D-Flip-Flop and 1-bit Register
 
 [DFF](https://www.javatpoint.com/d-flip-flop-in-digital-electronics) is the most elementary sequential gate; outputs the input in the previous time-step $\ (out[t] = in[t - 1])$
+
+<details>
+<summary><h4> Chips to implement: </h4></summary>
+
+- [x] Register (1-bit, 16-bit)
+- [x] RAM-n (8, 64, 512, 4096, 16384)
+- [x] PC (Program Counter)
+
+</details>
+
+<br>
+
+<a name='Chapter_4'></a>
+ 
+## Chapter 4: Machine Language
