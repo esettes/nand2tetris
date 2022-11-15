@@ -100,7 +100,7 @@ The two's complement of $\ x$ is defined to be $\ 2^n - x $, where $\ n$ = num o
 For example, the TC of -5
 </p>
 <p align="right">
-$\ 2^4 - 5$ ---> $\ 16 - 5 = 11 $
+$\ 2^4 - 5$ ---> $\ 16 - 5 =$ $\color{green}{11} $
 </p>
 <p align="right">
 Regular addition $\ \mod 2^n $
@@ -112,7 +112,7 @@ With this info, we can make subtraction too. Then if you want to compute $\ -2 +
 $\ 14 + 11 = 25$
 </p>
 <p align="right">
-$\ 25 \mod 16 = 9$ ---> $\ 2^4 - 9 = -7 $
+$\ 25 \mod 16 = 9$ ---> $\ 2^4 - 9 =$ $\color{green}{-7} $
 </p>
 
 <br><br>
@@ -183,8 +183,18 @@ Unlike the chips implemented so far, which are based on combinational logic,  th
 
 ### D-Flip-Flop and 1-bit Register
 
-[DFF](https://www.javatpoint.com/d-flip-flop-in-digital-electronics) is the most elementary sequential gate; outputs the input in the previous time-step $\ (out[t] = in[t - 1])$
+[DFF](https://www.javatpoint.com/d-flip-flop-in-digital-electronics) is the most elementary sequential gate; outputs the input in the previous time-step $\color{grey}{ (out[t] = in[t - 1])}$
 
+Combining DFF with 1-bit register, it can store one bit over time.
+
+<br>
+
+> Types of memory:
+> - DRAM
+> - SRAM (Cache)
+> - ROM
+> - Flash
+  
 <details>
 <summary><h4> Chips to implement: </h4></summary>
 
@@ -199,3 +209,7 @@ Unlike the chips implemented so far, which are based on combinational logic,  th
 <a name='Chapter_4'></a>
  
 ## Chapter 4: Machine Language
+
+### Control
+
+#### Conditional and unconditional branching
